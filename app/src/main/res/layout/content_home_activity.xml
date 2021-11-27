@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".usescase.home.HomeActivity"
+    android:background="@color/back_app">
+
+    <TextView
+        android:id="@+id/txt_notes_gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/expletus_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NotesGym"
+        android:text="@string/title_home_activity"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txt_notes_gym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_notes_gym"
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginStart="20dp"
+        >
+        <ImageView
+            android:layout_width="@dimen/image_home_size"
+            android:layout_height="@dimen/image_home_size"
+            app:layout_constraintStart_toEndOf="@+id/txt_notes_gym"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_notes_gym"
+            android:src="@drawable/no_image"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

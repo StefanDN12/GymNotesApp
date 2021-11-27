@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GymNotesApp</string>
+    <string name="title_home_activity">NotesGym</string>
 </resources>
