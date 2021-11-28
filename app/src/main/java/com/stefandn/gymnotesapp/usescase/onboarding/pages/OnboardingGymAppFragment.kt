@@ -5,13 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.gson.Gson
 import com.stefandn.gymnotesapp.R
-/**
- * A simple [Fragment] subclass.
- * Use the [OnboardingGymAppFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+import com.stefandn.gymnotesapp.model.Onboarding
+import com.stefandn.gymnotesapp.databinding.FragmentOnboardingGymAppBinding
+
+
 class OnboardingGymAppFragment : Fragment() {
+
+    companion object{
+        private const val PAGE = "PAGE"
+
+        @JvmStatic
+        fun fragment(page: Onboarding) =
+            OnboardingGymAppFragment().apply {
+                arguments = Bundle().apply {
+                    putString(PAGE, Gson().toJson(page))
+                }
+            }
+    }
+
+    private var _binding: FragmentOnboardingGymAppBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

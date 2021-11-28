@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".usescase.onboarding.OnboardingActivity">
+    tools:context=".usescase.onboarding.OnboardingActivity"
+    android:background="@color/back_app">
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vwPager_onboarding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constrButtons"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="10dp"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_anterior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_onboarding_anterior"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+            app:cornerRadius="15dp"
+            />
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_onboarding_siguiente"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_anterior"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="15dp"
+            />
+        <Button
+            android:id="@+id/btn_entedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_onboarding_entedido"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_anterior"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="15dp"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

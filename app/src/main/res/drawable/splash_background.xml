@@ -4,7 +4,13 @@
 
     <item android:drawable="@color/back_app"/>
 
-
+    <item
+        android:width="200dp"
+        android:height="50dp"
+        android:bottom="130dp"
+        android:gravity="center">
+        <bitmap android:src="@drawable/gym_text"></bitmap>
+    </item>
 
     <item
         android:top="150dp"

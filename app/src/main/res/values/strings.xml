@@ -3,4 +3,21 @@
     <string name="title_home_activity">NotesGym</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+        <!--Onboarding -->
+    <string name="onboarding.page0.title">Bienvenido a GymNotes</string>
+    <string name="onboarding.page0.text">La app te ayudará a registrar todas las marcas que vayas consiguiendo en tus levantamientos y podrás tener un seguimiento de estas.</string>
+    <string name="onboarding.page1.title">Registro de marcas</string>
+    <string name="onboarding.page1.text">Llevarás el registro mediante una tabla donde se incluirá la fecha y diferentes tomas como pueden ser series, repeticiones, peso, etc.</string>
+    <string name="onboarding.page2.title">Detalles del registro</string>
+    <string name="onboarding.page2.text">Una vez se tenga registradas marcas podrás hacer un seguimiento de estas mediante una gráfica, para que así quede más claro si se está progresando</string>
+    <string name="onboarding.page3.title">Ejercicios</string>
+    <string name="onboarding.page3.text">La app tendrá diferentes secciones del cuerpo para seleccionar y dentro de estas selecciones tendrás diferentes ejercicios.</string>
+    <string name="btn_onboarding_anterior">Anterior</string>
+    <string name="btn_onboarding_siguiente">Siguiente</string>
+    <string name="btn_onboarding_entedido">Entedido</string>
+
+
 </resources>

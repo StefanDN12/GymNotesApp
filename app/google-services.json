@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1059884620458",
+    "project_id": "notesgym-d2764",
+    "storage_bucket": "notesgym-d2764.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059884620458:android:ec8c495bf7c5fdaea04ed3",
+        "android_client_info": {
+          "package_name": "com.stefandn.gymnotesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059884620458-8p6ivqilopo2ikflf0j66cj4ng5p302u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBGteAhhmNyJPmfB7z00kCBMYfRHIkfRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059884620458-8p6ivqilopo2ikflf0j66cj4ng5p302u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
