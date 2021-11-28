@@ -37,9 +37,7 @@
             android:layout_height="@dimen/image_home_size"
             app:layout_constraintStart_toEndOf="@+id/txt_notes_gym"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/txt_notes_gym"
-            android:src="@drawable/no_image"
-            />
+            app:layout_constraintTop_toTopOf="@+id/txt_notes_gym"/>
     </androidx.cardview.widget.CardView>
 
 
