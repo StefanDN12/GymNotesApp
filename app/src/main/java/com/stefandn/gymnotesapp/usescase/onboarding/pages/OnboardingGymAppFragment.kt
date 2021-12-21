@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.gson.Gson
-import com.stefandn.gymnotesapp.R
 import com.stefandn.gymnotesapp.model.Onboarding
 import com.stefandn.gymnotesapp.databinding.FragmentOnboardingGymAppBinding
 
@@ -28,11 +27,37 @@ class OnboardingGymAppFragment : Fragment() {
     private var _binding: FragmentOnboardingGymAppBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    private var page:Onboarding? = null
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding_gym_app, container, false)
+        _binding = FragmentOnboardingGymAppBinding.inflate(inflater,container,false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        arguments?.let { arguments->
+            page = Gson().fromJson(arguments.getString(PAGE), Onboarding::class.java)
+        }
+
+        page?.let { page->
+            setup(page)
+        }
+    }
+
+    fun setup(pages: Onboarding){
+
+        context?.let { context ->
+
+
+
+            binding.imgVOnboarding.setImageResource(pages.image)
+            binding.txtTitleOnboarding.text = context.getString(pages.title)
+            binding.txtBodyOnboarding.text = context.getString(pages.body)
+        }
+
+
     }
 }

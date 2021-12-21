@@ -15,4 +15,8 @@ class OnboardingViewModel: ViewModel() {
     val dots = data.size
 
 
+    val understoodText = R.string.btn_onboarding_entedido
+    val previousText = R.string.btn_onboarding_anterior
+    val nextText = R.string.btn_onboarding_siguiente
+
 }
