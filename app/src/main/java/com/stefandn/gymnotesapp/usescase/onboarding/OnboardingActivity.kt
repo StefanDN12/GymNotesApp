@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import com.stefandn.gymnotesapp.usescase.login.Login
 import com.stefandn.gymnotesapp.R
 import com.stefandn.gymnotesapp.databinding.ActivityOnboardingBinding
-import com.stefandn.gymnotesapp.usescase.home.HomeActivity
 import com.stefandn.gymnotesapp.usescase.onboarding.pages.OnboardingAdapter
 
 
@@ -44,6 +44,8 @@ class OnboardingActivity : AppCompatActivity() {
 
     private fun setup() {
 
+
+
         // Adapter
         slider()
 
@@ -60,7 +62,7 @@ class OnboardingActivity : AppCompatActivity() {
 //        }
 
         binding.btnSiguiente.setOnClickListener {
-            val act = Intent(this, HomeActivity::class.java)
+            val act = Intent(this, Login::class.java)
             startActivity(act)
             finish()
         }
@@ -71,6 +73,7 @@ class OnboardingActivity : AppCompatActivity() {
         binding.vwPagerOnboarding.adapter = OnboardingAdapter(this, viewModel.data)
 
         binding.vwPagerOnboarding.registerOnPageChangeCallback(object: OnPageChangeCallback(){
+
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)

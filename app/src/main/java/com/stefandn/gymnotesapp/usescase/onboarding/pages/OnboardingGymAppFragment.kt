@@ -1,5 +1,6 @@
 package com.stefandn.gymnotesapp.usescase.onboarding.pages
 
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -51,6 +52,11 @@ class OnboardingGymAppFragment : Fragment() {
 
         context?.let { context ->
 
+
+           /* val face: Typeface = Typeface.createFromAsset()
+
+            binding.txtTitleOnboarding.typeface
+            */
 
 
             binding.imgVOnboarding.setImageResource(pages.image)

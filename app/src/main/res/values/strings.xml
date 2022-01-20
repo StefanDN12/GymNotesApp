@@ -5,8 +5,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
-        <!--Onboarding -->
+    <!--Onboarding -->
     <string name="onboarding.page0.title">Bienvenido a GymNotes</string>
     <string name="onboarding.page0.text">La app te ayudará a registrar todas las marcas que vayas consiguiendo en tus levantamientos y podrás tener un seguimiento de estas.</string>
     <string name="onboarding.page1.title">Registro de marcas</string>
@@ -17,7 +16,22 @@
     <string name="onboarding.page3.text">La app tendrá diferentes secciones del cuerpo para seleccionar y dentro de estas selecciones tendrás diferentes ejercicios.</string>
     <string name="btn_onboarding_anterior">Anterior</string>
     <string name="btn_onboarding_siguiente">Siguiente</string>
-    <string name="btn_onboarding_entedido">Entedido</string>
+    <string name="btn_onboarding_entedido">Entendido</string>
+    <string name="txt_login_user">User</string>
+    <string name="txt_password_user">Password</string>
+    <string name="txt_button_login">Login</string>
+    <string name="txt_button_sign_up">Sign up</string>
+    <string name="txt_sign_up">Are you a member?</string>
+    <string name="txt_create_user">Not a member?</string>
+    <string name="txt_login_now">Login now</string>
+    <string name="txt_create_account_username">Username</string>
+    <string name="txt_create_account_email">Email</string>
+    <string name="txt_create_account_password">Password</string>
+    <string name="txt_create_account_repeat_password">Confirm Password</string>
+    <string name="required_repet_pass_create_acc_class">Required</string>
+    <string name="pass_no_same_create_acc_class">The passwords don\'t are the same</string>
+    <string name="btn_message_click_create_account_class">Please fill in all text fields and make sure that the passwords are the same</string>
+    <string name="users_firebase_coll">users</string>
 
 
 </resources>

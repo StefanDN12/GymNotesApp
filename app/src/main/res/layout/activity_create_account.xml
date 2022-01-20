@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".usescase.createAccount.CreateAccount"
+    android:background="@color/back_app">
+
+    <TextView
+        android:id="@+id/txt_notes_gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/expletus_sans_medium"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="NotesGym"
+        android:text="@string/title_home_activity"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create_account_username"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_user_login"
+        app:layout_constraintStart_toStartOf="@+id/input_user_login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_user_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/max_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        android:layout_marginTop="50dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_notes_gym">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_user"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create_account_email"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_user_email"
+        app:layout_constraintStart_toStartOf="@+id/input_user_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_user_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/max_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        android:layout_marginTop="50dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create_account_password"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_createAcc_password"
+        app:layout_constraintStart_toStartOf="@+id/input_createAcc_password" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_createAcc_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/max_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        android:layout_marginTop="50dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_createAcc_password"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create_account_repeat_password"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_createAcc_repeat_password"
+        app:layout_constraintStart_toStartOf="@+id/input_createAcc_repeat_password" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_createAcc_repeat_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/max_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        android:layout_marginTop="50dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_createAcc_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_createAcc_repeat_password"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_button_sign_up"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/input_createAcc_repeat_password"
+        app:layout_constraintStart_toStartOf="@+id/input_createAcc_repeat_password"
+        app:layout_constraintTop_toBottomOf="@+id/input_createAcc_repeat_password" />
+
+    <TextView
+        android:id="@+id/txt_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sign_up"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/input_createAcc_repeat_password"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/input_createAcc_repeat_password"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
+
+    <TextView
+        android:id="@+id/txt_go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_login_now"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginLeft="@dimen/min_padding_default"
+        app:layout_constraintStart_toEndOf="@+id/txt_member"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_member"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
